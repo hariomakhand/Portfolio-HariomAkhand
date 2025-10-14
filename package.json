@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://hariomakhand.github.io/Portfolio-HariomAkhand",
+  "homepage": "https://github.com/hariomakhand/Portfolio-HariomAkhand.git",
 
   "scripts": {
     "dev": "vite",

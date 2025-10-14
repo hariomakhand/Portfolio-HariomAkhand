@@ -501,7 +501,7 @@ export default function Hero() {
                 }}
               />
               <img
-                src="/profile.jpg"
+                src="./profile.jpg"
                 alt="Hariom Akhand"
                 className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full border-2 sm:border-4 border-white/20 shadow-2xl object-cover"
                 style={{
