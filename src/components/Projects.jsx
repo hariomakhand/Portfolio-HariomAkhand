@@ -1,14 +1,18 @@
 import React from "react";
+import HospitalImage from "../assest/hospital.jpg";
+import WeatherImage from "../assest/Weather.jpg";
+import BusImage from "../assest/bus.jpg";
+
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub, FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
-import { SiTailwindcss, SiJavascript, SiMongodb,SiMui } from "react-icons/si";
+import { SiTailwindcss, SiJavascript, SiMongodb, SiMui } from "react-icons/si";
 
 export default function Projects() {
   const projects = [
     {
       title: "Weather Dashboard",
       description: "A comprehensive weather application with real-time data, forecasts, and beautiful visualizations. Features location-based weather, search functionality, and responsive design.",
-      image: "/api/placeholder/600/400",
+      image: WeatherImage,
       technologies: [
         { name: "React", icon: <FaReact className="text-cyan-400" /> },
         { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
@@ -29,7 +33,7 @@ export default function Projects() {
     {
       title: "Hospital Management",
       description: "A professional hospital management system designed to handle patient records, doctor appointments, and medical staff management with an industry-level UI. Built using React and Material UI (MUI).",
-      image: "/api/placeholder/600/400",
+      image: HospitalImage,
       technologies: [
         { name: "React", icon: <FaReact className='text-cyan-400' /> },
         { name: "JavaScript", icon: <SiJavascript className='text-yellow-400' /> },
@@ -43,14 +47,14 @@ export default function Projects() {
         "Animated navigation bar with images"
       ],
 
-      demo: "https://hariomakhand.github.io/todo-list/",
-      source: "https://github.com/hariomakhand/todo-list",
+      demo: "https://hariomakhand.github.io/Hospital-Mangment-123/",
+      source: "https://github.com/hariomakhand/Hospital-Mangment-123/",
       status: "Completed"
     },
     {
       title: "Collage Bus  Management",
       description: "This project helps a college manage its entire transportation system digitally — including bus routes, drivers, and students, with real-time GPS tracking and notifications.",
-      image: "/api/placeholder/600/400",
+      image: BusImage,
       technologies: [
         { name: "React", icon: <FaReact className="text-cyan-400" /> },
         { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
@@ -150,15 +154,19 @@ export default function Projects() {
               >
                 {/* Project Image */}
                 <div className="relative overflow-hidden">
-                  <div className="aspect-video bg-gradient-to-br from-primary-500/20 to-accent-500/20 flex items-center justify-center">
-                    <div className="text-4xl sm:text-5xl md:text-6xl opacity-50">🚀</div>
+                  <div className="aspect-video overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
                   </div>
 
                   {/* Status Badge */}
                   <div className="absolute top-2 sm:top-4 right-2 sm:right-4">
                     <span className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium ${project.status === 'Completed'
-                        ? 'bg-success-500/20 text-success-400 border border-success-500/30'
-                        : 'bg-warning-500/20 text-warning-400 border border-warning-500/30'
+                      ? 'bg-primary-500/100 text-success-400 border border-success-500/30'
+                      : 'bg-warning-500/100 text-warning-400 border border-warning-500/30'
                       }`}>
                       {project.status}
                     </span>
