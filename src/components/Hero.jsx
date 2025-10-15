@@ -501,7 +501,7 @@ export default function Hero() {
                 }}
               />
               <img
-                src="./profile.jpg"
+                src="profile.jpg"
                 alt="Hariom Akhand"
                 className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full border-2 sm:border-4 border-white/20 shadow-2xl object-cover"
                 style={{
@@ -517,7 +517,7 @@ export default function Hero() {
             variants={itemVariants}
           >
             <motion.a
-              href="/HariomAkhandCV.pdf"
+              href="HariomAkhandCV.pdf"
               download
               className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base"
               whileHover={{ 
