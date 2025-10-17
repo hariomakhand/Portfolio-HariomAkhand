@@ -1,14 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0a0a0a" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <title>Hariom Akhand — Portfolio</title>
-  </head>
-  <body class="bg-neutral-950 text-neutral-100">
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariom Akhand - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            text-align: center;
+            background: rgba(255,255,255,0.05);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #0ea5e9, #d946ef, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradient 3s ease infinite;
+        }
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .link {
+            padding: 15px 25px;
+            background: rgba(14, 165, 233, 0.1);
+            color: #0ea5e9;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid rgba(14, 165, 233, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .link:hover {
+            background: rgba(14, 165, 233, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(14, 165, 233, 0.2);
+        }
+        .info {
+            font-size: 1rem;
+            color: #64748b;
+            line-height: 1.8;
+        }
+        .status {
+            color: #10b981;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+        .skills {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .skill {
+            background: rgba(217, 70, 239, 0.1);
+            color: #d946ef;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(217, 70, 239, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status">🚀 Portfolio Live on gh-pages!</div>
+        <h1>Hariom Akhand</h1>
+        <p class="subtitle">Full Stack Developer</p>
+        
+        <div class="links">
+            <a href="https://github.com/hariomakhand" target="_blank" class="link">
+                🔗 GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/hariom-akhand" target="_blank" class="link">
+                💼 LinkedIn
+            </a>
+            <a href="mailto:hariomakhand82@gmail.com" class="link">
+                📧 Email
+            </a>
+        </div>
+        
+        <div class="info">
+            <p><strong>📱 Phone:</strong> +91 6267318849</p>
+            <p><strong>📍 Location:</strong> Sundrel, India</p>
+            <p><strong>🎓 Education:</strong> BCA Student</p>
+            <p><strong>💻 Specialization:</strong> MERN Stack Development</p>
+        </div>
+        
+        <div class="skills">
+            <span class="skill">React.js</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">Express.js</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">Git</span>
+            <span class="skill">Tailwind CSS</span>
+        </div>
+    </div>
+</body>
 </html>
