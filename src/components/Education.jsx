@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const educationData = [
   {
     degree: "10th Grade",
-    school: "Nan Jeevan Public High School, Bijwad",
-    year: "2020",
+    school: "Nav Jeevan Public High School Bijwad",
+    year: "2020-2021",
     details: "Completed secondary education with strong foundation in core subjects",
     icon: <FaSchool className="text-primary-400 text-2xl" />,
     completed: true,
@@ -14,45 +14,26 @@ const educationData = [
   },
   {
     degree: "12th Grade",
-    school: "Government School, Sundrel",
-    year: "2022",
-    details: "Science Stream (Biology) - Prepared foundation for computer applications",
+    school: "Government Higher Secondary School Sundrel",
+    year: "2022-2023",
+    details: "Science Stream (Maths) - Prepared foundation for computer applications",
     icon: <FaSchool className="text-accent-400 text-2xl" />,
     completed: true,
     type: "higher-secondary"
   },
-  {
-    degree: "BCA - 1st Year",
-    school: "Sant Singhaji College",
-    year: "2022-2023",
-    cgpa: "7.30 CGPA",
-    details: "Introduction to programming, database concepts, and web technologies",
-    icon: <FaGraduationCap className="text-success-400 text-2xl" />,
-    completed: true,
-    type: "undergraduate"
-  },
-  {
-    degree: "BCA - 2nd Year",
-    school: "Sant Singhaji College",
-    year: "2023-2024",
-    sgpa: "7.45 SGPA",
-    details: "Advanced programming, data structures, and software engineering",
-    icon: <FaGraduationCap className="text-warning-400 text-2xl" />,
-    completed: true,
-    type: "undergraduate"
-  },
-  {
-    degree: "BCA - 3rd Year",
-    school: "Sant Singhaji College",
-    year: "2024-Present",
-    details: "Currently pursuing final year with focus on full-stack development",
-    icon: <FaGraduationCap className="text-blue-400 text-2xl" />,
-    completed: false,
-    type: "undergraduate"
-  },
+ {
+  degree: "BCA - 1st to 3rd Year",
+  school: "Sant Singaji Institute of Science and Management Sandalpur",
+  year: "2023-Present",
+  details: "Studied programming, database concepts, web technologies, data structures, software engineering, and currently focusing on full-stack development",
+  icon: <FaGraduationCap className="text-blue-400 text-2xl" />,
+  completed: false,
+  type: "undergraduate"
+},
+
   {
     degree: "IT Diploma",
-    school: "Sant Singhaji College",
+    school: "Sant Singaji Institute of Science and Management Sandalpur",
     year: "2024-Present",
     details: "Specialized diploma in Information Technology and modern web frameworks",
     icon: <FaLaptopCode className="text-purple-400 text-2xl" />,
