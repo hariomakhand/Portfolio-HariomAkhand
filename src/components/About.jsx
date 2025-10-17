@@ -145,7 +145,7 @@ export default function About() {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <img
-                    src="profile-image.jpg?t=1735736400"
+                    src="profile-image.jpg"
                     alt="Hariom Akhand"
                     className="w-full max-w-xs sm:max-w-sm mx-auto rounded-xl sm:rounded-2xl shadow-2xl"
                   />
