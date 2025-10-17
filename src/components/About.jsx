@@ -146,7 +146,7 @@ export default function About() {
                 >
                   <img
                     src="profile-image.jpg"
-                    alt="Hariom Akhand"
+                    alt="Hariom Akhand - About"
                     className="w-full max-w-xs sm:max-w-sm mx-auto rounded-xl sm:rounded-2xl shadow-2xl"
                   />
                 </motion.div>
