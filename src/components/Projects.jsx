@@ -1,6 +1,6 @@
 import React from "react";
 import HospitalImage from "../assest/hospital.jpg";
-import WeatherImage from "../assest/Weather.jpg";
+import LeaveImage from "../assest/Leave.jpg";
 import BusImage from "../assest/bus.jpg";
 
 import { motion } from "framer-motion";
@@ -10,24 +10,32 @@ import { SiTailwindcss, SiJavascript, SiMongodb, SiMui } from "react-icons/si";
 export default function Projects() {
   const projects = [
     {
-      title: "Weather Dashboard",
-      description: "A comprehensive weather application with real-time data, forecasts, and beautiful visualizations. Features location-based weather, search functionality, and responsive design.",
-      image: WeatherImage,
+      title: "Smart Leave Management System",
+      description: "Smart Leave Management System is a web-based application designed to automate and simplify the leave management process in an organization or college. The system allows employees/students to apply for leave online and enables administrators or managers to approve or reject leave requests efficiently.",
+      image: LeaveImage,
       technologies: [
-        { name: "React", icon: <FaReact className="text-cyan-400" /> },
-        { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
-        // { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400" /> },
-        { name: "API", icon: <FaDatabase className="text-green-400" /> }
+       { name: "React", icon: <FaReact className="text-cyan-400" /> },
+        { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+        { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+        { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400" /> }
       ],
       features: [
-        "Real-time weather data",
-        "7-day forecast",
-        "Location search",
-        "Responsive design",
-        "Weather maps"
+        'User Registration and Login Authentication',
+
+        "Apply for Leave (with reason and date selection)",
+
+        "Admin/Manager Approval or Rejection System",
+
+        "Leave Status Tracking",
+
+        "Leave History Management",
+
+        "Role-Based Access (User & Admin)",
+
+        "Secure Database Integration"
       ],
-      demo: "https://hariomakhand.github.io/Weather-app/",
-      source: "https://github.com/hariomakhand/Weather-app",
+      demo: "https://smart-leave-permission-system-cs6r.vercel.app/",
+      source: "https://github.com/ajaymeena9069/Smart-Leave-Permission-System",
       status: "Completed"
     },
     {
@@ -73,9 +81,9 @@ export default function Projects() {
         "Responsive and modern UI with Tailwind CSS"
       ],
 
-      demo: "#",
-      source: "#",
-      status: "In Progress"
+      demo: "http://college-bus-management-system-navy.vercel.app",
+      source: "https://github.com/hariomakhand/College-Bus-Management-System",
+      status: "Completed"
     }
   ];
 

@@ -39,8 +39,8 @@ export default function Contact() {
     {
       icon: <FaEnvelope className="text-primary-400" />,
       title: "Email",
-      value: "hariomakhand82@gmail.com",
-      link: "mailto:hariomakhand82@gmail.com"
+      value: "hariomdev.akhand@gmail.com",
+      link: "mailto:hariomdev.akhand@gmail.com"
     },
     {
       icon: <FaPhone className="text-success-400" />,

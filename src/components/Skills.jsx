@@ -20,8 +20,8 @@ export default function Skills() {
         { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" />, level: 90 },
         { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" />, level: 85 },
         { name: "React", icon: <FaReact className="text-cyan-400" />, level: 80 },
-        { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400" />, level: 85 },
-        { name: "TypeScript", icon: <SiTypescript className="text-blue-600" />, level: 70 }
+        { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400" />, level: 85 }
+       
       ]
     },
     {
