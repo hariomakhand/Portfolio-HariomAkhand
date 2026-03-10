@@ -18,7 +18,7 @@ export default function Footer() {
   ];
 
   const contactInfo = [
-    { icon: FaEnvelope, text: "hariomakhand82@gmail.com", href: "mailto:hariomakhand82@gmail.com" },
+    { icon: FaEnvelope, text: "hariomdev.akhand@gmail.com", href: "mailto:hariomdev.akhand@gmail.com" },
     { icon: FaPhone, text: "+91 6267318849", href: "tel:+916267318849" },
     { icon: FaMapMarkerAlt, text: "Sundrel, India", href: "#" }
   ];
