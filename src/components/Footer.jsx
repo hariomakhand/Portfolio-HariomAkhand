@@ -6,7 +6,7 @@ export default function Footer() {
   const socialLinks = [
     { icon: FaGithub, href: "https://github.com/hariomakhand", color: "hover:text-gray-300", label: "GitHub" },
     { icon: FaLinkedin, href: "https://www.linkedin.com/in/hariom-akhand", color: "hover:text-blue-400", label: "LinkedIn" },
-    { icon: FaEnvelope, href: "mailto:hariomakhand82@gmail.com", color: "hover:text-primary-400", label: "Email" }
+    { icon: FaEnvelope, href: "mailto:hariomdev.akhand@gmail.com", color: "hover:text-primary-400", label: "Email" }
   ];
 
   const quickLinks = [
@@ -18,7 +18,7 @@ export default function Footer() {
   ];
 
   const contactInfo = [
-    { icon: FaEnvelope, text: "hariomakhand82@gmail.com", href: "mailto:hariomakhand82@gmail.com" },
+    { icon: FaEnvelope, text: "hariomdev.akhand@gmail.com", href: "mailto:hariomdev.akhand@gmail.com" },
     { icon: FaPhone, text: "+91 6267318849", href: "tel:+916267318849" },
     { icon: FaMapMarkerAlt, text: "Sundrel, India", href: "#" }
   ];
@@ -74,8 +74,9 @@ export default function Footer() {
                   <motion.a
                     key={index}
                     href={social.href}
-                    target="_blank"
-                    rel="noreferrer"
+                    target={social.href.startsWith('mailto:') ? '_self' : '_blank'}
+                    rel={social.href.startsWith('mailto:') ? undefined : 'noreferrer'}
+                    onClick={social.href.startsWith('mailto:') ? (e) => { e.stopPropagation(); window.location.href = social.href; } : undefined}
                     className={`p-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-slate-400 ${social.color} transition-all duration-300`}
                     whileHover={{ scale: 1.1, y: -3 }}
                     whileTap={{ scale: 0.9 }}
@@ -142,17 +143,19 @@ export default function Footer() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.8 + index * 0.1, duration: 0.4 }}
                   >
-                    <Icon className="text-primary-400 text-sm flex-shrink-0" />
                     {contact.href !== "#" ? (
-                      <motion.a
+                      <a
                         href={contact.href}
-                        className="text-slate-400 hover:text-primary-400 transition-colors duration-300 text-sm break-all"
-                        whileHover={{ x: 2 }}
+                        className="flex items-center gap-3 text-slate-400 hover:text-primary-400 transition-colors duration-300 text-sm break-all"
                       >
+                        <Icon className="text-primary-400 text-sm flex-shrink-0" />
                         {contact.text}
-                      </motion.a>
+                      </a>
                     ) : (
-                      <span className="text-slate-400 text-sm">{contact.text}</span>
+                      <>
+                        <Icon className="text-primary-400 text-sm flex-shrink-0" />
+                        <span className="text-slate-400 text-sm">{contact.text}</span>
+                      </>
                     )}
                   </motion.li>
                 );

@@ -92,7 +92,7 @@ export default function About() {
                 {[
                   { icon: FaMapMarkerAlt, label: "Location", value: "Sundrel, India" },
                   { icon: FaGraduationCap, label: "Education", value: "BCA Student" },
-                  { icon: FaEnvelope, label: "Email", value: "hariomakhand82@gmail.com" },
+                  { icon: FaEnvelope, label: "Email", value: "hariomdev.akhand@gmail.com" },
                   { icon: FaPhone, label: "Phone", value: "+91 6267318849" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-lg bg-white/5 border border-white/10">
